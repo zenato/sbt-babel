@@ -9,6 +9,8 @@ Installation
 To use this plugin use the addSbtPlugin command within your project's `plugins.sbt` file:
 
 ```scala
+resolvers += Resolver.url("bintray-zenato-sbt-plugins", url("http://dl.bintray.com/zenato/sbt-plugins"))(Resolver.ivyStylePatterns)
+
 addSbtPlugin("io.teamscala.sbt" % "sbt-babel" % "1.0.0")
 ```
 
