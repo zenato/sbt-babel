@@ -1,0 +1,3 @@
+> set JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
+> assets
+$ exists target/web/public/main/good.js

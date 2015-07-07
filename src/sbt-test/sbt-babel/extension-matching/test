@@ -1,0 +1,7 @@
+> set JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
+> assets
+$ exists target/web/public/main/good-jsx.js
+$ exists target/web/public/main/good-jsx-js.js
+$ exists target/web/public/main/good-es6.js
+$ exists target/web/public/main/good-es6-js.js
+
