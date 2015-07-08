@@ -41,7 +41,7 @@ object SbtBabel extends AutoPlugin {
     inConfig(TestAssets)(babelUnscopedSettings) ++
     Seq(
       moduleName := "babel",
-      shellFile := getClass.getClassLoader.getResource("babel-shell.js"),
+      shellFile := getClass.getClassLoader.getResource("babel.js"),
       taskMessage in Assets := "Babel compiling",
       taskMessage in TestAssets := "Babel test compiling"
     )

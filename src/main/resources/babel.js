@@ -24,13 +24,12 @@ function processor(input, output) {
 
         try {
             result = {
-				code: babel.transform(contents, options).code
-			};
+                code: babel.transform(contents, options).code
+            };
         } catch (err) {
             throw parseError(input, contents, err);
         }
         return result;
-
     }).then(function(result) {
         return promised.mkdirp(path.dirname(output)).yield(result);
     }).then(function(result) {
