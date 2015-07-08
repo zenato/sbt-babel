@@ -35,3 +35,24 @@ Or locally in your project with a `package.json` file:
   }
 }
 ```
+
+Usage
+------------
+
+For example with `build.sbt`:
+```scala
+BabelKeys.options := WebJs.JS.Object(
+  "stage" -> 2,
+  "comments" -> false,
+  "modules" -> "common"
+)
+```
+
+Or locally in your project with a `.babelrc` file:
+```json
+{
+  "stage": 2,
+  "comments": false,
+  "modules": "common"
+}
+```
