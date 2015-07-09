@@ -11,7 +11,7 @@ lazy val root = (project in file(".")).
   settings(
     sbtPlugin := true,
 
-    //resolvers += Resolver.typesafeRepo("releases"),
+    resolvers += Resolver.typesafeRepo("releases"),
 
     libraryDependencies ++= Seq(
       "com.typesafe" % "jstranspiler" % "1.0.0"
