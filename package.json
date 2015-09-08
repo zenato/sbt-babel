@@ -1,8 +1,8 @@
 {
   "name": "sbt-babel",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "devDependencies": {
-    "babel-core": "^5.8.19",
+    "babel-core": "^5.8.23",
     "mkdirp": "^0.5.1",
     "when": "^3.7.3"
   }
