@@ -31,7 +31,7 @@ Or locally in your project with a `package.json` file:
 ```json
 {
   "devDependencies": {
-    "babel-core": "^5.8.19"
+    "babel-core": "^5.8.23"
   }
 }
 ```
