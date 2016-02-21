@@ -1,4 +1,3 @@
 {
-	"stage": 2,
-	"modules": "umd"
+	presets: ["stage-2", "transform-react-jsx"]
 }

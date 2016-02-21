@@ -9,7 +9,7 @@ Installation
 To use this plugin use the addSbtPlugin command within your project's `plugins.sbt` file:
 
 ```scala
-addSbtPlugin("io.teamscala.sbt" % "sbt-babel" % "1.0.2")
+addSbtPlugin("io.teamscala.sbt" % "sbt-babel" % "1.0.3")
 ```
 
 Your project's build file also needs to enable sbt-web plugins. For example with `build.sbt`:
@@ -31,7 +31,8 @@ Or locally in your project with a `package.json` file:
 ```json
 {
   "devDependencies": {
-    "babel-core": "^5.8.23"
+    "babel-core": "^6.5.1",
+    "babel-preset-stage-0" // If you needed more..
   }
 }
 ```
@@ -42,17 +43,14 @@ Usage
 For example with `build.sbt`:
 ```scala
 BabelKeys.options := WebJs.JS.Object(
-  "stage" -> 2,
-  "comments" -> false,
-  "modules" -> "common"
+  "presets" -> List("stage-0")
+  // More options ...
 )
 ```
 
 Or locally in your project with a `.babelrc` file:
 ```json
 {
-  "stage": 2,
-  "comments": false,
-  "modules": "common"
+  "presets": ["stage-0"]
 }
 ```
