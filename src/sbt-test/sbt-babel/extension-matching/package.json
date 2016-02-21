@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "babel-core": "^6.5.1"
+    "babel-core": "^6.5.1",
+    "babel-plugin-transform-react-jsx": "^6.5.1"
   }
 }
