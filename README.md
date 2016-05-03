@@ -31,7 +31,7 @@ Or locally in your project with a `package.json` file:
 ```json
 {
   "devDependencies": {
-    "babel-core": "^6.5.1",
+    "babel-core": "^6.8.0",
     "babel-preset-stage-0" // If you needed more..
   }
 }
