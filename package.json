@@ -1,9 +1,9 @@
 {
   "name": "sbt-babel",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "devDependencies": {
-    "babel-core": "^6.5.1",
+    "babel-core": "^6.8.0",
     "mkdirp": "^0.5.1",
-    "when": "^3.7.3"
+    "when": "^3.7.7"
   }
 }
