@@ -54,13 +54,14 @@ jst.process({
 }, args);
 
 function parseError(input, contents, err) {
-    var lines = contents.split('\n', err.loc.line);
+    var hasLocation = !!err.loc;
+    var lines = hasLocation ? contents.split('\n', err.loc.line) : [];
     return {
         message: err.message,
         severity: 'error',
-        lineNumber: err.loc.line,
-        characterOffset: err.loc.column,
-        lineContent: err.loc.line > 0 ? lines[err.loc.line - 1] : 'unknown',
+        lineNumber: hasLocation ? err.loc.line : 0,
+        characterOffset: hasLocation ? err.loc.column : -1,
+        lineContent: hasLocation ? (err.loc.line > 0 ? lines[err.loc.line - 1] : 'unknown') : '',
         source: input
     };
 }
