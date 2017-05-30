@@ -9,7 +9,7 @@ Installation
 To use this plugin use the addSbtPlugin command within your project's `plugins.sbt` file:
 
 ```scala
-addSbtPlugin("io.teamscala.sbt" % "sbt-babel" % "1.0.5")
+addSbtPlugin("io.teamscala.sbt" % "sbt-babel" % "1.1.0")
 ```
 
 Your project's build file also needs to enable sbt-web plugins. For example with `build.sbt`:
@@ -31,7 +31,7 @@ Or locally in your project with a `package.json` file:
 ```json
 {
   "devDependencies": {
-    "babel-core": "^6.9.1",
+    "babel-core": "^6.24.1",
     "[If you needed more...]",
     "babel-preset-stage-0"
   }
