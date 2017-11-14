@@ -6,7 +6,7 @@ name := "sbt-babel"
 
 description := "An SBT plugin to perform Babel compilation."
 
-scalaVersion := "2.10.5"
+scalaVersion := "2.10.6"
 
 resolvers += Resolver.typesafeRepo("releases")
 
