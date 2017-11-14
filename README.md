@@ -9,7 +9,7 @@ Installation
 To use this plugin use the addSbtPlugin command within your project's `plugins.sbt` file:
 
 ```scala
-addSbtPlugin("io.teamscala.sbt" % "sbt-babel" % "1.1.1")
+addSbtPlugin("io.teamscala.sbt" % "sbt-babel" % "1.1.2")
 ```
 
 Your project's build file also needs to enable sbt-web plugins. For example with `build.sbt`:
