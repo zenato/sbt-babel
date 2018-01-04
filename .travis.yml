@@ -1,9 +1,8 @@
 language: scala
-scala:
-   - 2.10.5
+jdk: oraclejdk8
 script:
-  - "sbt ++$TRAVIS_SCALA_VERSION test"
-  - "sbt ++$TRAVIS_SCALA_VERSION scripted"
+  - "sbt ^^$SBT_VERSION test"
+  - "sbt ^^$SBT_VERSION scripted"
 branches:
   except:
     - /^v[0-9]/
@@ -11,4 +10,9 @@ cache:
   directories:
     - $HOME/.sbt
     - $HOME/.ivy2
-
+matrix:
+  include:
+    - env: SBT_VERSION="0.13.16"
+      scala: 2.10.7
+    - env: SBT_VERSION="1.0.4"
+      scala: 2.12.4
