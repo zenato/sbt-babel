@@ -20,10 +20,10 @@ lazy val root = (project in file(".")).enablePlugins(SbtWeb)
 JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
 ```
 
-Install babel-core, either globally with npm:
+Install @babel/core, either globally with npm:
 
 ```shell
-npm install babel-core -g
+npm install @babel/core -g
 ```
 
 Or locally in your project with a `package.json` file:
