@@ -32,8 +32,8 @@ Or locally in your project with a `package.json` file:
 {
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "[If you needed more...]",
-    "@babel/preset-react"
+    "@babel/preset-react": "^7.0.0",
+    "...more_dependencies": "any_version"
   }
 }
 ```
