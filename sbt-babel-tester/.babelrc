@@ -1,4 +1,4 @@
 {
-    "presets": ["stage-1", "stage-2"],
-    "plugins": ["transform-react-jsx", "transform-es2015-modules-umd"]
+    "presets": ["@babel/preset-react"],
+    "plugins": ["@babel/transform-runtime"]
 }

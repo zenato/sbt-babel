@@ -5,7 +5,7 @@ jst = require('jstranspiler'),
 nodefn = require('when/node'),
 mkdirp = require('mkdirp'),
 path = require('path'),
-babel = require('babel-core');
+babel = require('@babel/core');
 
 var promised = {
     mkdirp: nodefn.lift(mkdirp),
@@ -24,7 +24,7 @@ function processor(input, output) {
 
         try {
             result = {
-                code: babel.transform(contents, options).code
+                code: babel.transformSync(contents, options).code
             };
         } catch (err) {
             throw parseError(input, contents, err);

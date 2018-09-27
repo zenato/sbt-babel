@@ -9,7 +9,7 @@ Installation
 To use this plugin use the addSbtPlugin command within your project's `plugins.sbt` file:
 
 ```scala
-addSbtPlugin("io.teamscala.sbt" % "sbt-babel" % "1.1.2")
+addSbtPlugin("io.teamscala.sbt" % "sbt-babel" % "1.2.0")
 ```
 
 Your project's build file also needs to enable sbt-web plugins. For example with `build.sbt`:
@@ -31,9 +31,9 @@ Or locally in your project with a `package.json` file:
 ```json
 {
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "@babel/core": "^7.0.0",
     "[If you needed more...]",
-    "babel-preset-stage-0"
+    "@babel/preset-react"
   }
 }
 ```
@@ -44,7 +44,7 @@ Usage
 For example with `build.sbt`:
 ```scala
 BabelKeys.options := WebJs.JS.Object(
-  "presets" -> List("stage-0")
+  "presets" -> List("@babel/preset-react")
   // More options ...
 )
 ```
@@ -52,6 +52,6 @@ BabelKeys.options := WebJs.JS.Object(
 Or locally in your project with a `.babelrc` file:
 ```json
 {
-  "presets": ["stage-0"]
+  "presets": ["@babel/preset-react"]
 }
 ```
